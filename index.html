@@ -1,0 +1,153 @@
+<!DOCTYPE <html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title> Poetry by [NAME] </title>
+
+    <!-- Bootstrap -->
+    <link href="styles/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<style>
+    body {
+        position: relative;
+    }
+    
+    #about {
+        height: 1000px;
+        text-align: center;
+        background-image: url(female.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    #untitled {
+        padding-top: 50px;
+        height: 500px;
+    }
+    
+    #sonnet {
+        padding-top: 50px;
+        height: 550px;
+    }
+    
+    #haiku {
+        padding-top: 50px;
+        height: 500px;
+    }
+</style>
+
+<body id="top">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#top">VIC & CO</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#about">me</a></li>
+                    <li><a href="#untitled">untitled</a></li>
+                    <li><a href="#sonnet">sonnet for tarun</a></li>
+                    <li><a href="#haiku">haiku for victoria</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="about" class="container">
+    </div>
+
+    <div id="untitled" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h2> untitled</h2>
+                <blockquote>
+                    <p>
+                        maybe the couples who kiss more <br> send more gifts <br> write more notes <br> say I love you more often <br> maybe they haven't seen as much love <br> as you or I <br> maybe love is quantifiable <br> they have to overdose each
+                        day
+                        <br> the whole universe in a room <br> but if love is science and equations <br> if love is definable <br> then what am I seeing in their eyes <br> that wipes all reason and language from mine</p><small>Victoria Naylor</small>
+                </blockquote>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+    <div id="sonnet" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h2>sonnet</h2>
+                <blockquote>
+                    <p>There will come a time for us, my dearest-<br> when the world is through with its turbulence<br> and when the moon whispers her forgiveness<br> and stars are all we need for vigilance.<br> There will be worlds meant for us, my darling-
+                        <br> worlds where distance melts as it does in dreams,<br> where we wake in each other's arms finding<br> ourselves no longer lost in any seas.</p>
+                    <p>But when you hold me close to you, my dear-<br> the whole universe signs an armistice,<br> and the moon leans down through the atmosphere<br> to kiss the mountains full of promises.<br> And when in dreaming's end you do not dissapear,<br>                        we will have found the world that's meant for us.</p>
+                    <small> Victoria Naylor</small>
+                </blockquote>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+    <div id="haiku" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h2> haiku</h2>
+                <blockquote>
+                    <p>i miss you vicco <br> you make it easy to smile <br> puppers and kittens</p><small>Tarunraj Amuthan</small>
+                </blockquote>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+
+
+    <footer style="padding-bottom: 50px">
+        <p style="text-align: center">made by tarunraj amuthan for victoria naylor, with love</p>
+    </footer>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="styles/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling on all links inside the navbar
+            $("#myNavbar a").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+</body>
+
+</html>
